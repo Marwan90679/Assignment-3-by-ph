@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet items</title>
+
+    <!-- *tailwind setup -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              accent: "#FFDC26",
+              "card-color": " #F9DF8A",
+              "trending-bg": " #FFF9F4",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- *font setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+      .font-1 {
+        font-family: "ADLaM Display", serif;
+      }
+      .font-2 {
+        font-family: "Sora", serif;
+      }
+    </style>
+
+    <!-- *font awesome setup -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-1">
+    <!-- *header section -->
+    <header class="bg-[#FFF9F4] ">
+      <nav class="flex items-center border-b-[0.5px] border-black md:border-none">
+        <div
+          class="pt-[12px] pb-[10px] pl-[16px] md:flex md:items-center md:pt-[26px] md:ml-[140px] md:pb-[26px]"
+        >
+          <img src="./c1-assets/logo-header.png" alt="" />
+          <div>
+            <h3 class="hidden md:block md:font-2 md:font-normal md:text-[26px]">
+              Browse<span class="text-accent">4</span>Pets
+            </h3>
+          </div>
+        </div>
+        <ul
+          class="hidden md:flex md:space-x-[32px] md:ml-[400px] md:mr-[132px] md:text-[20px]"
+        >
+          <li><a href="">Find a pet</a></li>
+          <li><a href="">Breeds</a></li>
+          <li><a href="">Contact us</a></li>
+        </ul>
+
+        <div class="hidden md:block">
+          <div class="flex space-x-[16px] ml-[200px]">
+            <div class="flex ml-[16px] space-x-[16px] items-center">
+              <a href="">
+                <i class="text-[20px] fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href=""> <i class="text-[20px] fa-solid fa-bell"></i></a>
+            </div>
+
+            <button
+              class="text-[20px] border rounded-lg border-[#FFDC26] px-[15px] py-[5px]"
+            >
+              Login
+            </button>
+            <button class="text-[20px] bg-accent rounded-lg px-[15px] py-[5px]">
+              Register
+            </button>
+          </div>
+        </div>
+        <div class="  text-center  py-[20px] pl-[16px] md:hidden text-[30px] ml-[283px]">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- *main section -->
+    <main class="">
+      <!-- banner section -->
+      <section
+        class="ml-[16px]  mt-[32px]  md:mt-[76px] md:max-w-[1320px] md:mx-auto bg-[url('./c1-assets/cat-big.png')] bg-no-repeat md:bg-left-bottom md:h-[749px] bg-bottom  "
+      >
+        <div>
+          <h3 class="font-1 text-[30px]  md:text-[56px] md:mb-[16px] mb-[12px]">
+            Pamper Your Pet, <br />
+            Because They Deserve <br />
+            the Best
+          </h3>
+          <p class="font-2 text-[20px] md:w-[672px] mb-[12px]">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button
+            class="text-[20px] bg-accent rounded-lg px-[15px] py-[5px] mt-[24px]"
+          >
+            Find a pet
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!--* footer -->
+    <footer></footer>
+  </body>
+</html>
