@@ -41,12 +41,41 @@
     />
 
     <style>
+
+
+
+
       .font-1 {
         font-family: "ADLaM Display", serif;
       }
       .font-2 {
         font-family: "Sora", serif;
       }
+      @keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+
+.group:hover .slide-in {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+
+
     </style>
 
     <!-- *font awesome setup -->
@@ -115,16 +144,16 @@
     <main class="">
       <!-- banner section -->
       <section
-        class="lg:mt-[76px] lg:max-w-[1320px] lg:mx-auto bg-[url('./c1-assets/cat-big.png')] bg-no-repeat lg:bg-left-bottom lg:h-[749px] bg-bottom h-[500px]"
-        style="background-size: contain"
+        class="group  lg:mt-[76px] lg:max-w-[1320px] lg:mx-auto     bg-[url('./c1-assets/cat-big.png')] bg-no-repeat lg:bg-left-bottom lg:h-[749px] bg-bottom h-[500px]  "
+        style="background-size: contain  "
       >
-        <div class="ml-[9.96px] lg:ml-[16px] mt-[32px]">
-          <h3 class="font-1 text-[30px] lg:text-[56px] lg:mb-[16px] mb-[12px]">
+        <div class="ml-[9.96px] lg:ml-[16px] mt-[32px] slide-in ">
+          <h3   class=" font-1 text-[30px] lg:text-[56px] lg:mb-[16px] mb-[12px]">
             Pamper Your Pet, <br />
             Because They Deserve <br />
             the Best
           </h3>
-          <p class="font-2 text-[20px] lg:w-[672px] mb-[12px]">
+          <p   class="font-2 text-[20px] lg:w-[672px] mb-[12px] ">
             Discover a world of treats, toys, and essentials handpicked for your
             furry friends. Shop now and make tails wag with joy!
           </p>
